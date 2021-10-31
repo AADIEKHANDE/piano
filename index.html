@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano</title>
+    <style>
+        body{
+            background-color: rgb(72, 104, 133);
+        }
+        .box{
+            padding: 20px;
+            width: 270px;
+            height: 300px;
+            margin: auto;
+            margin-top: 100px;
+        }
+        .btn{
+            width: 50px;
+            height: 200px;
+            border: none;
+            background-color: white;
+        }
+        .btnb{
+            width: 50px;
+            height: 200px;
+            border: none;
+            background-color: black;
+        }
+        .btn:active{
+            filter: opacity(80%);
+        }
+        .btnb:active{
+            filter: opacity(80%);
+        }
+        .logo{
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 10px;
+            text-align: center;
+            margin-top: 100px;
+        }
+        .me{
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 10px;
+            text-align: center;
+            margin-top: 100px;
+            font-size: 13px;
+            color: rgba(0, 0, 0, 0.514);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="logo">PIANO</h1>
+    <div class="box">
+        <button class="btn" onclick="b1()"></button>
+        <button class="btnb" onclick="b2()"></button>
+        <button class="btn" onclick="b3()"></button>
+        <button class="btnb" onclick="b4()"></button>
+        <button class="btn" onclick="b5()"></button>
+    </div>
+    <h1 class="me">@aditya_ekhadne_</h1>
+</body>
+</html>
+<script>
+    function b1()
+    {
+        var audio = new Audio("P1.MP3");
+        audio.play();
+    }
+    function b2()
+    {
+        var audio = new Audio("P2.MP3");
+        audio.play();
+    }
+    function b3()
+    {
+        var audio = new Audio("P3.MP3");
+        audio.play();
+    }
+    function b4()
+    {
+        var audio = new Audio("P4.MP3");
+        audio.play();
+    }
+    function b5()
+    {
+        var audio = new Audio("P5.MP3");
+        audio.play();
+    }
+</script>
